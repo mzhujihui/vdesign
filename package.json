@@ -1,0 +1,43 @@
+{
+  "private": "true",
+  "name": "vdesign",
+  "version": "1.0.0",
+  "description": "vue3 移动端组件库",
+  "main": "index.js",
+  "scripts": {
+    "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .js 和 .vue 的文件",
+    "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "prettier:comment": "自动格式化当前目录下的所有文件",
+    "prettier": "prettier --write",
+    "commit:comment": "引导设置规范化的提交信息",
+    "commit":"git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "packageManager": "pnpm@8.2.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.11.0",
+    "prettier": "^2.8.7"
+  }
+}
